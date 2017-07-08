@@ -15,22 +15,22 @@ Code Book Coursera Week 4 Project
 
 ## Variables:
 
-*ActivityLabels - List of unique activities and associated codes.
-*CastCombined - Averages of each data variable for each subject and activity. 
-*Combined - Combined training and test data.
-*Features - Full list of features derived from accelerometer and gyroscope. 
-*FilteredFeatures - Features filtered down to include mean and standard deviation. 
-*MeltCombined - Longated data table of the Combined data table that reduces set to only four variables, will be used to create CastCombined described above. 
-*SubjectTest - Subjects related to the test data.
-*SubjectTrain - Subjects related to the training data.
-*TestData - Filtered test data combined with non-descriptive subject and activity data. 
-*TrainData - Filtered train data combined with non-descriptive subject and activity data. 
-*XTest - Unlabled data related to x test.
-*XTestFiltered - labled and filterd test data.
-*XTrain - Unlabled data related to x train.
-*XTrainFiltered - labled and filtered train data.
-*YTest - Non-descriptive activity data for test.
-*YTrain - Non-descriptive activity data for train.
+* ActivityLabels - List of unique activities and associated codes.
+* CastCombined - Averages of each data variable for each subject and activity. 
+* Combined - Combined training and test data.
+* Features - Full list of features derived from accelerometer and gyroscope. 
+* FilteredFeatures - Features filtered down to include mean and standard deviation. 
+* MeltCombined - Longated data table of the Combined data table that reduces set to only four variables, will be used to create CastCombined described above. 
+* SubjectTest - Subjects related to the test data.
+* SubjectTrain - Subjects related to the training data.
+* TestData - Filtered test data combined with non-descriptive subject and activity data. 
+* TrainData - Filtered train data combined with non-descriptive subject and activity data. 
+* XTest - Unlabled data related to x test.
+* XTestFiltered - labled and filterd test data.
+* XTrain - Unlabled data related to x train.
+* XTrainFiltered - labled and filtered train data.
+* YTest - Non-descriptive activity data for test.
+* YTrain - Non-descriptive activity data for train.
 
 ## List of Data Variables:
 
@@ -113,4 +113,3 @@ Code Book Coursera Week 4 Project
 * fBodyBodyGyroJerkMag-mean
 * fBodyBodyGyroJerkMag-std
 * fBodyBodyGyroJerkMag-meanFreq
-
