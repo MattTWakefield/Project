@@ -2,7 +2,7 @@
 Code Book Coursera Week 4 Project
 ======
 
-##Summary of Transformations:
+## Summary of Transformations:
 
 1. Load required packages for analysis.  
 2. Downloaded zip file from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip and unzipped. 
@@ -13,7 +13,7 @@ Code Book Coursera Week 4 Project
 7. Calculated mean for each data variable for each subject and activity combination.
 
 
-##Variables:
+## Variables:
 
 *ActivityLabels - List of unique activities and associated codes.
 *CastCombined - Averages of each data variable for each subject and activity. 
@@ -32,7 +32,7 @@ Code Book Coursera Week 4 Project
 *YTest - Non-descriptive activity data for test.
 *YTrain - Non-descriptive activity data for train.
 
-##List of Data Variables:
+## List of Data Variables:
 
 * tBodyAcc-mean-X
 * tBodyAcc-mean-Y
