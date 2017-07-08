@@ -4,6 +4,8 @@ This project involves the tidying of a set of data derived from a study conducte
 
 Descriptions of the environment and data variables are present in the CodeBook.md that can be found in this repository. The Codebook will also contain detailed information regarding the transformations of the data that took place. 
 
+Although the script should download this data automatically, the data should be located in a zip file at: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
 The output data will result in two additional files
 
 1. TidyCombined.csv, which is the combined training and test data in tidy format.
