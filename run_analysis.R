@@ -58,6 +58,6 @@ Combined$V2<-NULL
 MeltCombined<-melt(Combined,id.vars = c(1,2),measure.vars=c(3:81))
 CastCombined<-dcast(MeltCombined,Activity + Subject ~ variable, mean)
 
-#Write out need files.
+#Write out needed files.
 fwrite(Combined,"TidyCombined.csv")
 fwrite(CastCombined,"TidyAggregated.csv")
