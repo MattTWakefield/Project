@@ -6,7 +6,7 @@ require(reshape2)
 
 #Download data and and unzip.
 if (!file.exists("XYZDatazip.zip")){
-  ileURL <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
+  fileURL <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
   download.file(fileURL,"XYZDatazip.zip")
   unzip("XYZDatazip.zip")
 } 
@@ -29,6 +29,7 @@ FilteredFeaturesIndex<-FilteredFeatures[[1]]
 
 #Creates a vector that contains the name of each column.
 FilteredFeaturesNames<-FilteredFeatures[[2]]
+FilteredFeaturesNames<-gsub("\\(|\\)","",FilteredFeaturesNames)
 
 #Filters out only neccessary columns from train and test datasets
 XTrainFiltered<-XTrain[,FilteredFeaturesIndex, with=FALSE]
@@ -56,3 +57,7 @@ Combined$V2<-NULL
 #Creates a long form of Combined so that data can be aggregated/pivoted.
 MeltCombined<-melt(Combined,id.vars = c(1,2),measure.vars=c(3:81))
 CastCombined<-dcast(MeltCombined,Activity + Subject ~ variable, mean)
+
+#Write out need files.
+fwrite(Combined,"TidyCombined.csv")
+fwrite(CastCombined,"TidyAggregated.csv")
